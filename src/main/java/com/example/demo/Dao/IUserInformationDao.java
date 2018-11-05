@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 @Mapper
-public interface FindUserInformationDao {
+public interface IUserInformationDao {
     public List<UserInformationVo> findUser();
+    public List<UserInformationVo> getUserInformation(Long id);
+    public void insert(UserInformationVo userInformationVo);
+
 }
