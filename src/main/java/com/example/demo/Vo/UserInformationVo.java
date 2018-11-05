@@ -3,18 +3,18 @@ package com.example.demo.Vo;
 import java.util.Objects;
 
 public class UserInformationVo {
-    private Long userId;
+    //private Long userId;
     private String userName;
     private String userClass;
     private String userAddress;
 
-    public Long getUserId() {
-        return userId;
-    }
+   // public Long getUserId() {
+   //     return userId;
+  //  }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
+   // public void setUserId(Long userId) {
+     //   this.userId = userId;
+   // }
 
     public String getUserName() {
         return userName;
@@ -40,4 +40,18 @@ public class UserInformationVo {
         this.userAddress = userAddress;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof UserInformationVo)) return false;
+        UserInformationVo that = (UserInformationVo) o;
+        return Objects.equals(getUserName(), that.getUserName()) &&
+                Objects.equals(getUserClass(), that.getUserClass()) &&
+                Objects.equals(getUserAddress(), that.getUserAddress());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getUserName(), getUserClass(), getUserAddress());
+    }
 }
