@@ -21,7 +21,6 @@ public class RedisTestController {
         jedis.hmset("map",map);
         System.out.println(jedis.get("a"));
         System.out.println(jedis.get("name"));
-        System.out.println(jedis.hmget("map"));
     }
     @RequestMapping("/delete/{key}")
     public String delete(@PathVariable("key") String key){

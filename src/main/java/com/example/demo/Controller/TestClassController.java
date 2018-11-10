@@ -42,6 +42,7 @@ public class TestClassController {
             FileWriter fileWriter = new FileWriter("D://copy_a.txt");
             FileReader fileReader = new FileReader("D://a.txt");
             int num = 0;
+
             while((num=fileReader.read())!=-1){
                 fileWriter.write(num);
             }
