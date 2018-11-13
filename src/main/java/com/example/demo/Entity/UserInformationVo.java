@@ -1,20 +1,20 @@
-package com.example.demo.Vo;
+package com.example.demo.Entity;
 
 import java.util.Objects;
 
 public class UserInformationVo {
-    //private Long userId;
+    private Long userId;
     private String userName;
     private String userClass;
     private String userAddress;
 
-   // public Long getUserId() {
-   //     return userId;
-  //  }
+    public Long getUserId() {
+      return userId;
+    }
 
-   // public void setUserId(Long userId) {
-     //   this.userId = userId;
-   // }
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
 
     public String getUserName() {
         return userName;
@@ -53,5 +53,12 @@ public class UserInformationVo {
     @Override
     public int hashCode() {
         return Objects.hash(getUserName(), getUserClass(), getUserAddress());
+    }
+
+    @Override
+    public String toString() {
+        return "UserInformationVo{" +
+                "userName='" + userName + '\'' +
+                '}';
     }
 }

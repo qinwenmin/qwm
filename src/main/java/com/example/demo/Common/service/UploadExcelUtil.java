@@ -1,4 +1,4 @@
-package com.example.demo.common.service;
+package com.example.demo.Common.service;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,9 +1,8 @@
-package com.example.demo.Thread;
+package com.example.demo.Service.Thread;
 
 import com.alibaba.druid.support.json.JSONUtils;
 import com.example.demo.Dao.IUserInformationDao;
-import com.example.demo.Vo.UserInformationVo;
-import com.fasterxml.jackson.databind.node.JsonNodeType;
+import com.example.demo.Entity.UserInformationVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

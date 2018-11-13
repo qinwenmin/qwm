@@ -1,10 +1,9 @@
 package com.example.demo.Service;
 
-import com.example.demo.Thread.ThreadCallableService;
+import com.example.demo.Service.Thread.ThreadCallableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

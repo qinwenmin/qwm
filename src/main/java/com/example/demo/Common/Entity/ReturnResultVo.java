@@ -1,4 +1,4 @@
-package com.example.demo.common.vo;
+package com.example.demo.Common.Entity;
 
 public class ReturnResultVo {
     private int statusCode;

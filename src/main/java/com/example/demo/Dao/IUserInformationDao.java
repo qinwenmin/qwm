@@ -1,8 +1,7 @@
 package com.example.demo.Dao;
 
-import com.example.demo.Vo.UserInformationVo;
+import com.example.demo.Entity.UserInformationVo;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 @Mapper

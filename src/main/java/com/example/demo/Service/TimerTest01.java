@@ -1,7 +1,7 @@
 package com.example.demo.Service;
 
 
-import com.example.demo.Thread.TimerTaskTest01;
+import com.example.demo.Service.Thread.TimerTaskTest01;
 import org.springframework.stereotype.Service;
 
 import java.util.Timer;

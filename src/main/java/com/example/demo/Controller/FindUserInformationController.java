@@ -2,21 +2,12 @@ package com.example.demo.Controller;
 
 import com.example.demo.Dao.IUserInformationDao;
 import com.example.demo.Service.FindUserInformationService;
-import com.example.demo.Vo.UserInformationVo;
-import com.example.demo.common.vo.ReturnResultVo;
-import org.apache.catalina.User;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
+import com.example.demo.Entity.UserInformationVo;
+import com.example.demo.Common.Entity.ReturnResultVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-
 import javax.annotation.Resource;
-import javax.servlet.http.HttpSession;
-import java.io.Reader;
 import java.util.*;
 
 @RestController
